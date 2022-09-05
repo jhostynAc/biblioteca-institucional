@@ -4,11 +4,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
-    background-image: url(https://i.pinimg.com/originals/f3/30/f1/f330f16a1a3653236449062e4935cab4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 /*section*/
 section{
     display: flex;
@@ -26,7 +21,7 @@ section{
     width: calc(100% - 100px);
     min-height: calc(100vh - 200px);
     min-height: 300px;
-    background:transparent;
+    background:#cacaca7e;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -44,13 +39,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(255, 255, 255, 0.2);
+    background: #CACACA;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 header .logo{
     color: #000000;
@@ -131,33 +122,33 @@ header ul li a.activo{
 }
 .contenido h2{
     font-size: 3em;
-    color: #fff;
+    color: rgb(0, 0, 0);
     padding: 15px;
 }
 .contenido p{
     font-size: 1.2em;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: left;
 }
 /*Recomendados*/
 .imagenes{
     margin: 8px;
-    width: 410px;
-    margin-left: 5px;
-    background-color: #ffffff85;
+    max-width: 410px;
+    max-height: 510px;
+    background-color: #CACACA;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
 }
 img{
-    height: 50vh;
-    width: 50%;
-    margin:25px ;
+    height: 480px;
+    width: 90%;
+    margin:25px;
 }
 h1{
     font-size: 35px;
     margin-top: 30px;
-    color: #fff;
+    color: black;
 }
 .contenido-2{
     background:white;
@@ -168,17 +159,13 @@ h1{
     padding: 25px;
     align-items: center;
 }
-p{
-    margin-top: 20px;
-    margin-right:25px ;
-}
 /*Redes*/
 .redes .boton{
     display: inline-block;
     width: 60px;
     height: 60px;
     margin: 0 5px;
-    background: #fff;
+    background: #CACACA;
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
@@ -232,156 +219,4 @@ p{
 }
 footer{
     text-align:center;
-}
-/*Usuario*/
-.form{
-    position: absolute;
-    max-width: 430px;
-    width: 100%;
-    padding: 30px;
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-
-}
-.form.signup{
-    opacity: 0;
-    pointer-events: none;
-}
-.forms.show-signup .form.signup{
-    opacity: 1;
-    pointer-events: auto;
-}
-.forms.show-signup .form.login{
-    opacity: 0;
-    pointer-events: none;
-}
-form{
-    margin-top: 30px;
-}
-.form .field{
-    position: relative;
-    height: 50px;
-    width: 100%;
-    margin-top: 20px;
-    border-radius: 6px;
-}
-.field input,
-.field button{
-    height: 100%;
-    width: 100%;
-    border: none;
-    font-size: 16px;
-    font-weight: 400;
-    border-radius: 6px;
-}
-.field input{
-    outline: none;
-    padding: 0 15px;
-    border: 1px solid#CACACA;
-    background-color: #fff;
-    color: #000000;
-}
-.field input:focus{
-    border-bottom-width: 2px;
-}
-.eye-icon{
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    font-size: 18px;
-    color: #8b8b8b;
-    cursor: pointer;
-    padding: 5px;
-}
-.field button{
-    color: #fff;
-    background-color: #0171d3;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-.field button:hover{
-    background-color: #016dcb;
-}
-.form-link{
-    text-align: center;
-    margin-top: 10px;
-}
-.form-link span,
-.form-link a{
-    font-size: 14px;
-    font-weight: 400;
-    color: #000000;
-}
-.form a{
-    color: #319fff;
-    text-decoration: none;
-}
-.form-content a:hover{
-    text-decoration: underline;
-}
-.line{
-    position: relative;
-    height: 1px;
-    width: 100%;
-    margin: 36px 0;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-}
-.line::before{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #000000;
-    padding: 0 15px;
-}
-.media-options a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-a.facebook{
-    color: #fff;
-    background-color: #4267b2;
-}
-a.facebook .facebook-icon{
-    height: 28px;
-    width: 28px;
-    color: #0171d3;
-    font-size: 20px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-}
-.facebook-icon,
-img.google-img{
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-}
-img.google-img{
-    height: 20px;
-    width: 20px;
-    object-fit: cover;
-}
-a.google{
-    border: 1px solid #CACACA;
-    background-color: #FFF;
-}
-a.google span{
-    font-weight: 500;
-    opacity: 0.6;
-    color: #232836;
-}
-
-@media screen and (max-width: 400px) {
-    .form{
-        padding: 20px 10px;
-    }
-    
 }
