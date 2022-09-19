@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/repositorio.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Document</title>
 </head>
 
@@ -23,15 +23,22 @@
         </ul>
     </nav>
     <section>
-        <div class="libros">
-            <button>
-                <img src=https://th.bing.com/th/id/R.b671ea2b59b400e0ef3da80a0510744b?rik=lcdYVhsx0LNOhw&riu=http%3a%2f%2f4.bp.blogspot.com%2f-EKqRBRRXzC8%2fUVxIRrIyKlI%2fAAAAAAAAA4g%2f3TQ9UUplAZY%2fs1600%2fdel%2bamor%2by%2botros%2bdemonios.jpg&ehk=Y0yJre9e%2bTZd0d1fDpI2%2bHljGPkiXI6sn7Ee%2bQvOfrg%3d&risl=&pid=ImgRaw&r=0
-                    alt="">
-                <h1>libro</h1>
-                <p>ksksks</p>
-            </button>
-        </div>
+        
+        <template id="template-card">
+            <div class="col-12 mb-2 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Jorge</h5>
+                        <img src="" alt="" class="img-thumbnail  my-4">
+                        <p>dewey:</p>
+                        <button type="button" class="btn btn-dark" data-id="1">reservar</button>
+                        <label for="" id="reserva">.</label>
+                    </div>
+                </div>
+            </div>
+        </template>
     </section>
 </body>
-
+<script src="./script/libros.js" type="module"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </html>
