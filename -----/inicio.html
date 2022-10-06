@@ -6,15 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/inicio.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <title>El mundo de los libros</title>
 </head>
 
 <header>
     <nav>
-        <a>
-            <img src="./imagenes/Diseño_sin_título__1_-removebg-preview.png" alt="logo" class="activo">
-        </a>
+        <a>biblio</a>
         <ul>
             <li><a href="./inicio2.html">repositorio digital</a></li>
         </ul>
@@ -23,21 +22,42 @@
 
 <body>
     <section>
-        <div class="contenido_1">
-            <div class="titulo">
-                <h2>Bienvenido</h2>
+        <div class="container">
+            <img src="./imagenes/Diseño_sin_título__1_-removebg-preview.png" alt="">
+        </div>
+        <hr>
+        <div class="info">
+            <div class="texto">
+                <h1>¡Bienvenido</h1>
                 <p>La biblioteca escolar es un espacio donde se encuentran los recursos para el aprendizaje dentro de la
                     institución yofrece las mismas oportunidades para todo el alumnado en cuanto el acceso a la
                     información
                 </p>
             </div>
-            <div class="boton_usu">
-               <button>ingresar<i class="fa fa-arrow-right"></i></button>
+            <div class="ilustracion">
+                <img src="./imagenes/Imagen (1).png" alt="">
             </div>
-            <img src="./imagenes/Imagen (1).png" alt="">
+        </div>
+        <hr>
+        <div class="botones">
+            <button id="open">Nosotros</button>
+            <button><a href="./usuario.html">ingresar</a></button>
+            <button><a href="./info.html">contactanos</a></button>
+        </div>
+        <div class="modal-container" id="modal_container">
+            <div class="modal">
+                <h1>Nosotros</h1>
+                <p>somos una institucion educativa que se encuentra en el corregimiento de santa elena, en la cual
+                    contamos con una biblioteca para el uso de los estudiantes de forma gratuita y de facil acceso</p>
+                <img src="./imagenes/Diseño_sin_título__1_-removebg-preview.png" alt="">
+                <div class="botones">
+                    <button><a id="close">Cerrar</a></button>
+                </div>
+            </div>
         </div>
     </section>
 </body>
+<script src="./script/popup.js"></script>
 <footer>
     <div class="redes">
         <div class="boton">
