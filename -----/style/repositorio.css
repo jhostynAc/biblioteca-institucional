@@ -107,7 +107,7 @@ nav  i{
     height: 1rem;
    }   
 /*libros*/
-.container{
+.row{
     display: flex;
     flex-direction: row;
 }
@@ -118,6 +118,8 @@ nav  i{
     border-radius: 5px;
     background: var(--i);
     background-size: cover;
+    background-position: center;
+    text-align: center;
     box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
     overflow: hidden;
 }
