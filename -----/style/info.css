@@ -67,6 +67,7 @@ nav ul li a.activo{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 20px;
 }
 .tarjeta{
     width: 300px;
@@ -75,7 +76,7 @@ nav ul li a.activo{
     text-align: center;
     padding: 50px;
     border-radius: 25px;
-    margin: 8px;
+    margin: 20px;
 }
 .imagen{
     width: 105px;
@@ -96,6 +97,44 @@ nav ul li a.activo{
 }
 .tarjeta p{
     margin-top: 25px;
+}
+/*slider*/
+.slider{
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+.slider ul{
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+}
+.slider li{
+    width: 1200px;
+    list-style: none;
+}
+.slider .bloque{
+    width: 1150px;
+    height: 400px;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+.slider, .slider ul, .slider .bloque{
+    height: 100vh;
+}
 }
 /*Redes*/
 .redes .boton{

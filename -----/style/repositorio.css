@@ -17,7 +17,7 @@ section{
     background-position: center;
     background-attachment: fixed;
     padding: 50px; 
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 /*Menu*/
 nav{
@@ -109,7 +109,8 @@ nav  i{
 /*libros*/
 .row{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px ;
 }
 .card {
     margin: 20px;
