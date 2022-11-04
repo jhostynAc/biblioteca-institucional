@@ -36,12 +36,12 @@
                         </div>
 
                         <div class="field button-field">
-                            <button onclick="sesion()" href="#">Ingresar</button>
+                            <button  href="#">Ingresar</button>
                         </div>
                     </form>
 
                     <div class="form-link">
-                        <span>¿No tienes una cuenta? <a href="#" class="link signup-link">Crear</a></span>
+                        <span>¿No tienes una cuenta? <a href="./registrar.html" class="link signup-link">Crear</a></span>
                     </div>
                 </div>
 
@@ -56,60 +56,11 @@
 
             </div>
 
-            <!-- Signup Form -->
-
-            <div class="form signup">
-                <div class="form-content">
-                    <form action="#" id="form_sign-up">
-                        <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input" id="email_sign-up">
-                        </div>
-
-                        <div class="field input-field">
-                            <input type="password" placeholder="Crear contraseña" class="password" id="password_sign-up">
-                        </div>
-
-                        <div class="field input-field">
-                            <input type="password" placeholder="Confirmar contraseña" class="password" id="confirm_password_sign-up">
-                            <i class='bx bx-hide eye-icon'></i>
-                        </div>
-
-                        <div class="field button-field">
-                            <button onclick="crear()">Crear</button>
-                        </div>
-                    </form>
-
-                    <div class="form-link">
-                        <span>¿Ya tienes una cuenta? <a href="#" class="link login-link">Ingresar</a></span>
-                    </div>
-                </div>
-
-                <div class="line"></div>
-
-                <div class="media-options">
-                    <a href="#" class="field google">
-                        <img src="./Imagenes/Google.png" alt="" class="google-img">
-                        <span>Usar Google</span>
-                    </a>
-                </div>
-
-            </div>
         </div>
         <div class="representacion">
             <img src="./imagenes/istockphoto-1207872886-170667a-removebg-preview.png" alt="">
         </div>
     </div>
-    <script>
-        function mostrar() {
-            swal('error en la busqueda', '', 'error')
-        }
-        function crear() {
-            swal('Creada con exito', '', 'success')
-        }
-        function sesion() {
-            swal('la contraseña o el usuario no coinciden', '', 'error')
-        }
-    </script>
     <script src="./script/usuario.js"></script>
 </body>
 
