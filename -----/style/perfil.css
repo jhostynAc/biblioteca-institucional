@@ -29,17 +29,18 @@ nav{
     box-shadow: 0 0 3px black;
     padding: 30px;
 }
-nav .logo{
+nav a {
     color: #000000;
     border-radius: 50px;
 }
 .logo:hover{
-    background: #fff;
+    background: #fff
 }
+
 nav ul{
     display: flex;
 }
-nav ul li {
+nav ul li{
     list-style: none;
     margin: 0 10px;
 }
@@ -50,14 +51,13 @@ nav ul li a{
     padding: 8px 15px;
     border-radius: 25px;
 }
-nav ul li a:hover,
-nav ul li a.activo{
+nav ul li a:hover{
     background: #fff;
     box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
 }
 .activo{
-    width: 20px;
-    height: 20px;
+    width: 90px;
+    height: 90px;
 }
 /*desplegable*/
 .header__menu {
@@ -201,5 +201,5 @@ nav ul li a.activo{
 }
 footer{
     text-align:center;
-    margin-top: -80px;
+    margin-top: -30px;
 }
