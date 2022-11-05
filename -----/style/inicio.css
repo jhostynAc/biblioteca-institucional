@@ -99,6 +99,7 @@ hr{
 .ilustracion{
     width: 200px;
     height: 100;
+    animation: formimg 2s linear infinite;
 }
 .ilustracion img{
     margin-top: 20px;
@@ -221,7 +222,7 @@ footer{
     text-align:center;
     margin-top: -80px;
 }
-
+/*img*/
 @keyframes formimg {
     0%,100%{
         transform: translatey(25px);
