@@ -29,11 +29,16 @@ nav{
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 0 3px black;
-    padding: 30px;
+    padding: 26px;
 }
 nav .logo {
     color: #000000;
     border-radius: 50px;
+}
+nav img{
+    width: 40px;
+    height: 40px;
+    margin-left: -155vh;
 }
 .logo:hover{
     background: #fff
