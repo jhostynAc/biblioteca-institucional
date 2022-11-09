@@ -186,7 +186,7 @@ nav  i{
     background: #4267b2;
 }
 .redes .boton:nth-child(2):hover .icono{
-    background: #128c7e;
+    background: #099110;
 }
 .redes .boton:hover .icono i{
     color: #fff;
@@ -195,9 +195,12 @@ nav  i{
     color: #4267b2;
 }
 .redes .boton:nth-child(2):hover span{
-    color: #128c7e;
+    color: #099110;
+}
+.boton i{
+    color: #000000;
 }
 footer{
     text-align:center;
-    margin-top: -30px;
+    margin-top: -80px;
 }
